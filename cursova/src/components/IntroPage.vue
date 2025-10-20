@@ -93,6 +93,7 @@ export default {
   object-fit: contain;
   background-color: black;
   clip-path: inset(0 1% 0 1%);
+  height: 110%;
 }
 
 .intro {
