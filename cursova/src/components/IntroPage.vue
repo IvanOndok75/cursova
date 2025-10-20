@@ -26,18 +26,21 @@ export default {
   name: "IntroPage",
   data() {
     return {
-      introVideoSrc: require("@/assets/video/1intro.mp4"),
-      loopVideoSrc: require("@/assets/video/2intro.mp4"),
+      introVideoSrc: require("@/assets/video/intro1xx.mp4"),
+      loopVideoSrc: require("@/assets/video/intro2xx.mp4"),
     };
   },
+
   mounted() {
+    document.body.style.overflow = "hidden";
+    window.addEventListener("wheel", this.preventScroll, { passive: false });
+    window.addEventListener("touchmove", this.preventScroll, { passive: false });
+
     const loop = this.$refs.loopVideo;
-    // Починаємо фонове відео із затримкою 2с
     setTimeout(() => {
       loop.currentTime = 0.01;
       loop.play();
 
-      // Коли відео майже закінчується — перемотуємо на початок
       loop.addEventListener("timeupdate", () => {
         if (loop.duration - loop.currentTime < 0.15) {
           loop.currentTime = 0.01;
@@ -46,7 +49,18 @@ export default {
       });
     }, 2000);
   },
+
+  beforeUnmount() {
+    document.body.style.overflow = "";
+    window.removeEventListener("wheel", this.preventScroll);
+    window.removeEventListener("touchmove", this.preventScroll);
+  },
+
   methods: {
+    preventScroll(e) {
+      e.preventDefault();
+    },
+
     handleIntroEnd() {
       const intro = this.$refs.introVideo;
       intro.style.transition = "opacity 0.2s linear";
@@ -65,7 +79,7 @@ export default {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background: black;
+  background: blue;
   position: relative;
 }
 
@@ -75,9 +89,10 @@ export default {
   left: 50%;
   width: 100%;
   height: 100%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1.04) scaleY(1.055);
   object-fit: contain;
   background-color: black;
+  clip-path: inset(0 1% 0 1%);
 }
 
 .intro {
@@ -90,6 +105,7 @@ export default {
   opacity: 1;
 }
 </style>
+
 
 
 
