@@ -1,16 +1,11 @@
 <template>
-  <IntroPage/>
+  <router-view />
 </template>
 
 <script>
-import IntroPage from './components/IntroPage.vue'
-
 export default {
   name: 'App',
-  components: {
-    IntroPage,
-  }
-}
+};
 </script>
 
 <style>
@@ -21,7 +16,7 @@ body,
   padding: 0;
   width: 100%;
   height: 100%;
-  background-color: black; 
+  background-color: black;
   overflow: hidden;
 }
 </style>
