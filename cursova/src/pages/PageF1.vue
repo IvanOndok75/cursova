@@ -9,3 +9,8 @@ export default {
    name: "PageF1",
   }
 </script>
+<style scoped>
+h1{
+  color: #fff;
+}
+</style>
