@@ -1,10 +1,14 @@
 <template>
-  <router-view />
+  <div id="app">
+    <transition name="fade" mode="out-in">
+      <router-view />
+    </transition>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'App',
+  name: "App",
 };
 </script>
 
@@ -19,4 +23,16 @@ body,
   background-color: black;
   overflow: hidden;
 }
+
+/* 🔹 Простий плавний перехід між сторінками */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
 </style>
+
