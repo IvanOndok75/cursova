@@ -24,7 +24,6 @@ body,
   overflow: hidden;
 }
 
-/* 🔹 Простий плавний перехід між сторінками */
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 2s ease;
