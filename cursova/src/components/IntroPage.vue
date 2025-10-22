@@ -35,7 +35,6 @@ export default {
     };
   },
   mounted() {
-    // 🔹 Вибір відео залежно від ширини екрана
     if (window.innerWidth >= 1024 && window.innerHeight >= 600) {
       this.introVideoSrc = require("@/assets/video/intro1.mp4");
       this.loopVideoSrc = require("@/assets/video/intro2.mp4");
@@ -44,12 +43,10 @@ export default {
       this.loopVideoSrc = require("@/assets/video/intro2xx.mp4");
     }
 
-    // 🔹 Блокування скролу
     document.body.style.overflow = "hidden";
     window.addEventListener("wheel", this.preventScroll, { passive: false });
     window.addEventListener("touchmove", this.preventScroll, { passive: false });
 
-    // 🔹 Коли відео готове — запускаємо луп
     this.$nextTick(() => {
       const loop = this.$refs.loopVideo;
       setTimeout(() => {
@@ -84,8 +81,12 @@ export default {
       }, 200);
     },
     goToPageF1() {
-      this.$router.push({ name: "PageF1" });
-    },
+  document.body.style.overflow = "";
+  window.removeEventListener("wheel", this.preventScroll);
+  window.removeEventListener("touchmove", this.preventScroll);
+
+  this.$router.push({ name: "PageF1" });
+},
   },
 };
 </script>
@@ -149,6 +150,7 @@ export default {
   transition: all 0.3s ease;
   opacity: 0;
   animation: fadeIn 3s forwards 0.5s;
+  font-family: Unbounded;
 }
 
 .enter-btn:hover {

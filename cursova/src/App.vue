@@ -13,6 +13,9 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
 html,
 body,
 #app {
@@ -20,7 +23,7 @@ body,
   padding: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: #040108ff;
   overflow: hidden;
 }
 
