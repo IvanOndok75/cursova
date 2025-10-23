@@ -27,7 +27,7 @@ div {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #04020eff;
+  background-color: #04020e6c;
   height: 100%;
   width: 40%;
   min-width: 300px;
@@ -37,7 +37,7 @@ div {
   margin: 0;
   box-shadow: 0 10px 30px #fff;
   animation: appear 3.5s ease-in-out;
-  overflow-y: auto; /* ✅ дозволяє прокручувати вміст */
+  overflow-y: auto;
 }
 
 h1 {
@@ -56,7 +56,6 @@ h2, h3, li, p {
   animation: glow 4s ease-in-out;
 }
 
-/* 🔹 Анімація появи всього блоку */
 @keyframes appear {
   from {
     opacity: 0;
@@ -66,7 +65,6 @@ h2, h3, li, p {
   }
 }
 
-/* 🔹 Анімація м’якого засвічення тексту */
 @keyframes glow {
   0% {
     text-shadow: none;
@@ -81,27 +79,22 @@ h2, h3, li, p {
   }
 }
 
-/* 🔹 Анімація заголовка по центру */
 
 @keyframes glow1 {
   0% {
     transform: translateY(200px) scale(2);
     opacity: 0;
   }
-
   45% {
     transform: translateY(0) scale(1.2);
     opacity: 1;
     text-shadow: 0 0 8px #fff;
   }
-
-  /* ⬅ Пауза в центрі */
   65% {
     transform: translateY(0) scale(1.2);
     opacity: 1;
     text-shadow: 0 0 12px #fff;
   }
-
   100% {
     transform: translateY(0) scale(1);
     opacity: 1;
