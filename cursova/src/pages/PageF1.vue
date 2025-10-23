@@ -12,6 +12,9 @@
       <li>Оптимістичний, футуристичний настрій, який символізував віру у технологічний прогрес.</li>
     </ul>
     <p>Frutiger Aero відображав уявлення про «світле майбутнє технологій» і став візуальним обличчям багатьох продуктів епохи.</p>
+    <nav>
+    <router-link to="/page2">Далі-></router-link>
+    </nav>
   </div>
 </template>
 
@@ -29,7 +32,7 @@ div {
   transform: translateX(-50%);
   background-color: #04020e6c;
   height: 100%;
-  width: 40%;
+  width: 43%;
   min-width: 300px;
   color: #fff;
   text-align: center;
@@ -54,6 +57,17 @@ h2, h3, li, p {
   font-size: 20px;
   animation-delay: 4s;
   animation: glow 4s ease-in-out;
+}
+nav{
+  padding: 30px;
+  margin: 30px;
+}
+nav:deep(a){
+  font-size: 20px;
+  font-family: Unbounded;
+  text-align: center;
+  text-decoration: none;
+  color: #74b1f7ff;
 }
 
 @keyframes appear {
