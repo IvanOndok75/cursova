@@ -19,7 +19,7 @@ export default {
 html,
 body,
 #app {
-  background-image: url('@/assets/img/p.jpg');
+   background-image: url('@/assets/img/p.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

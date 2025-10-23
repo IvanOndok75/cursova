@@ -27,7 +27,8 @@
     <p>Поєднання легкого технологічного настрою та природних елементів символізувало гармонію між людиною і цифровим світом — ідеальне бачення майбутнього, яким його уявляли 15–20 років тому.</p>
 
     <nav>
-    <router-link to="/page1">-Назад</router-link>
+    <router-link to="/page1">    ←Назад</router-link>
+    <router-link to="/page3">    Далі→</router-link>
     </nav>
   </div>
 </template>
@@ -76,6 +77,7 @@ h2, h3, li, p {
 nav{
   padding: 30px;
   margin: 30px;
+  gap: 10px
 }
 nav :deep(a) {
   font-size: 20px;

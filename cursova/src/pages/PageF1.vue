@@ -13,7 +13,7 @@
     </ul>
     <p>Frutiger Aero відображав уявлення про «світле майбутнє технологій» і став візуальним обличчям багатьох продуктів епохи.</p>
     <nav>
-    <router-link to="/page2">Далі-></router-link>
+    <router-link to="/page2">Далі→</router-link>
     </nav>
   </div>
 </template>
