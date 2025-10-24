@@ -6,6 +6,7 @@ import PageF3 from '@/pages/PageF3.vue';
 import PageF4 from '@/pages/PageF4.vue';
 import PageF5 from '@/pages/PageF5.vue';
 import PageF6 from '@/pages/PageF6.vue';
+import PageF7 from '@/pages/PageF7.vue';
 
 const routes = [
   {
@@ -42,6 +43,11 @@ const routes = [
     path: '/page6',
     name: 'PageF6',
     component: PageF6,
+  },
+  {
+    path: '/page7',
+    name: 'PageF7',
+    component: PageF7,
   },
 ];
 
