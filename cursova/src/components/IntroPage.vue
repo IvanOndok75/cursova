@@ -35,7 +35,10 @@ export default {
     };
   },
   mounted() {
-    if (window.innerWidth >= 1024 && window.innerHeight >= 600) {
+    if (window.innerWidth >= 1200 && window.innerHeight >= 800) {
+      this.introVideoSrc = require("@/assets/video/introb1.mp4");
+      this.loopVideoSrc = require("@/assets/video/introb2.mp4");
+    } else if (window.innerWidth >= 1024 && window.innerHeight >= 600) {
       this.introVideoSrc = require("@/assets/video/introbb1.mp4");
       this.loopVideoSrc = require("@/assets/video/introbb2.mp4");
     } else {
@@ -177,12 +180,12 @@ export default {
 }
 @media (min-height: 700px) {
   .video{
-  transform: scaleY(1.13);
+  transform: scaleY(1.15);
   }
 }
 @media (max-height: 600px && max-width: 1024px) {
   .video{
-  transform: scaleY(1.0);
+  transform: scaleY(1.075);
   }
 }
 </style>
