@@ -36,11 +36,11 @@ export default {
   },
   mounted() {
     if (window.innerWidth >= 1024 && window.innerHeight >= 600) {
-      this.introVideoSrc = require("@/assets/video/intro1.mp4");
-      this.loopVideoSrc = require("@/assets/video/intro2.mp4");
+      this.introVideoSrc = require("@/assets/video/introbb1.mp4");
+      this.loopVideoSrc = require("@/assets/video/introbb2.mp4");
     } else {
-      this.introVideoSrc = require("@/assets/video/intro1xx.mp4");
-      this.loopVideoSrc = require("@/assets/video/intro2xx.mp4");
+      this.introVideoSrc = require("@/assets/video/introf1.mp4");
+      this.loopVideoSrc = require("@/assets/video/introf2.mp4");
     }
 
     document.body.style.overflow = "hidden";
@@ -170,9 +170,14 @@ export default {
     bottom: 22%;
   }
 }
+@media (min-width: 1024 && max-width: 1200){
+  .video{
+    transform: scaleY(1.15);
+  }
+}
 @media (min-height: 700px) {
   .video{
-  transform: scaleY(1.17);
+  transform: scaleY(1.13);
   }
 }
 @media (max-height: 600px && max-width: 1024px) {
