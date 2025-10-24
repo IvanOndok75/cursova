@@ -19,8 +19,12 @@
     <router-link to="/page6">←Назад</router-link>
     </nav>
     <section>
-    <h4>&copy; 2025 Retro fans. Всі права захищено</h4>
+    <h2>Зв'яжіться з нами</h2>
+    <p>Gmail: uwutoxik@gmail.com</p>
+    <p>Телефон: +380 123 4567</p>
+    <p>Telegram: @uwucat3</p>
     </section>
+    <h4>&copy; 2025 Retro fans. Всі права захищено</h4>
   </div>
 </template>
 
@@ -47,6 +51,9 @@ export default {
   box-shadow: 0 10px 30px #fff;
   animation: appear 3.5s ease-in-out;
   overflow-y: auto;
+}
+section{
+    background-color: #71f7a417;
 }
 
 h1 {
