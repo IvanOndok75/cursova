@@ -40,6 +40,7 @@ export default {
   height: 100%;
   background: url('@/assets/img/4s.jpg') center/cover no-repeat;
   z-index: 0;
+  animation: appear 0.7s ease-in-out;
 }
 .MAIN {
   display: grid;

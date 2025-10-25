@@ -152,7 +152,7 @@ export default {
   backdrop-filter: blur(6px);
   transition: all 0.3s ease;
   opacity: 0;
-  animation: fadeIn 3s forwards 0.5s;
+  animation: fadeIn 5s forwards 0.5s;
   font-family: Unbounded;
 }
 
