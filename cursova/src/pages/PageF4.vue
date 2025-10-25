@@ -1,5 +1,6 @@
 <template>
-  <div>
+<div class="full"></div>
+  <div class="MAIN">
     <h1>Мода епохи: стиль одягу 2000-х</h1>
     <p>
       На початку 2000-х мода стала яскравою і сміливою. Після нестачі якісного одягу в 90-х люди хотіли виглядати сучасно, блискуче та «як з телевізора». Поп-культура, зірки MTV та реклама брендів формували стиль пересічних людей.
@@ -31,7 +32,16 @@ export default {
 </script>
 
 <style scoped>
-div {
+.full {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('@/assets/img/4s.jpg') center/cover no-repeat;
+  z-index: 0;
+}
+.MAIN {
   display: grid;
   position: absolute;
   left: 50%;

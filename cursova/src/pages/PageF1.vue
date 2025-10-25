@@ -1,5 +1,6 @@
 <template>
-  <div>
+<div class="full"></div>
+  <div class="MAIN">
     <h1>Що таке Frutiger aero?</h1>
     <p>
       Frutiger Aero — це візуальний стиль дизайну, який був популярним приблизно з 2003 по 2013 роки. Його можна вважати проміжним етапом між «глянцевою» естетикою початку 2000-х і мінімалістичним плоским дизайном, що домінував після 2013 року.
@@ -25,7 +26,16 @@ export default {
 </script>
 
 <style scoped>
-div {
+.full {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('@/assets/img/p.jpg') center/cover no-repeat;
+  z-index: 0;
+}
+.MAIN {
   display: grid;
   position: absolute;
   left: 50%;

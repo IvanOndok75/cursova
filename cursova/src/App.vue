@@ -19,12 +19,6 @@ export default {
 html,
 body,
 #app {
-   background-image: url('@/assets/img/p.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 100vh;
   width: 100%;
   margin: 0;
   padding: 0;

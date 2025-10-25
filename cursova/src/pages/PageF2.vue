@@ -1,5 +1,6 @@
 <template>
-  <div>
+<div class="full"></div>
+  <div class="MAIN">
     <h1>Як з’явився стиль Frutiger Aero?</h1>
     <p>
       Поява стилю Frutiger Aero нерозривно пов’язана з еволюцією цифрових технологій на початку 2000-х років, коли інтернет, мобільні пристрої та комп’ютери ставали доступними для широкої групи користувачів. Людство вступило в епоху швидкого технологічного прогресу, і дизайнери прагнули візуально підкреслити цю трансформацію.
@@ -40,7 +41,16 @@ export default {
 </script>
 
 <style scoped>
-div {
+.full {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('@/assets/img/2s.jpg') center/cover no-repeat;
+  z-index: 0;
+}
+.MAIN {
   display: grid;
   position: absolute;
   left: 50%;

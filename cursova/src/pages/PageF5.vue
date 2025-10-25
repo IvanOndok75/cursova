@@ -1,5 +1,6 @@
 <template>
-  <div>
+<div class="full"></div>
+  <div class="MAIN">
     <h1>Музика епохи Frutiger Aero</h1>
     <p>
       Музика 2000-х відображала дух часу: яскравий, емоційний і технологічний. Це був період, коли телебачення й радіо ще визначали смаки, а MTV і музичні журнали формували цілі покоління. Люди шукали нове звучання — щось сучасне, блискуче, як сам дизайн епохи.
@@ -26,7 +27,16 @@ export default {
 </script>
 
 <style scoped>
-div {
+.full {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('@/assets/img/5ss.jpg') center/cover no-repeat;
+  z-index: 0;
+}
+.MAIN {
   display: grid;
   position: absolute;
   left: 50%;

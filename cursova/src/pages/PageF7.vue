@@ -1,4 +1,5 @@
 <template>
+<div class="full"></div>
   <div class="MAIN">
     <h1>Висновок</h1>
     <p>
@@ -26,6 +27,7 @@
     </section>
     <h4>&copy; 2025 Retro fans. Всі права захищено</h4>
   </div>
+
 </template>
 
 <script>
@@ -35,6 +37,16 @@ export default {
 </script>
 
 <style scoped>
+.full {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('@/assets/img/7s.jpg') center/cover no-repeat;
+  z-index: 0;
+}
+
 .MAIN{
   display: grid;
   position: absolute;

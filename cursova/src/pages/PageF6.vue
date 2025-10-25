@@ -1,5 +1,6 @@
 <template>
-  <div>
+<div class="full"></div>
+  <div class="MAIN">
     <h1>Кінець епохи: перехід до мінімалізму</h1>
     <p>
       Frutiger Aero домінував у візуальній культурі майже десять років — від початку 2000-х до середини 2010-х. Ця естетика асоціювалася з технологічним оптимізмом: блискучі поверхні, скло, об’ємні кнопки й хвилясті лінії уособлювали «майбутнє, яке вже настало».
@@ -26,7 +27,16 @@ export default {
 </script>
 
 <style scoped>
-div {
+.full {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('@/assets/img/6s.jpg') center/cover no-repeat;
+  z-index: 0;
+}
+.MAIN {
   display: grid;
   position: absolute;
   left: 50%;
