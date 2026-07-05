@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import IntroPage from '@/components/IntroPage.vue';
 import PageF1 from '@/pages/PageF1.vue';
 import PageF2 from '@/pages/PageF2.vue';
@@ -52,7 +52,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes,
 });
 
