@@ -35,16 +35,16 @@ export default {
     };
   },
   mounted() {
-    if (window.innerWidth >= 1200 && window.innerHeight >= 800) {
-      this.introVideoSrc = require("@/assets/video/introb1.mp4");
-      this.loopVideoSrc = require("@/assets/video/introb2.mp4");
-    } else if (window.innerWidth >= 1024 && window.innerHeight >= 600) {
-      this.introVideoSrc = require("@/assets/video/introbb1.mp4");
-      this.loopVideoSrc = require("@/assets/video/introbb2.mp4");
-    } else {
-      this.introVideoSrc = require("@/assets/video/introf1.mp4");
-      this.loopVideoSrc = require("@/assets/video/introf2.mp4");
-    }
+  if (window.innerWidth >= 1200 && window.innerHeight >= 800) {
+    this.introVideoSrc = require("@/assets/video/introb1_s.mp4");
+    this.loopVideoSrc = require("@/assets/video/introb2_s.mp4");
+  } else if (window.innerWidth >= 1024 && window.innerHeight >= 600) {
+    this.introVideoSrc = require("@/assets/video/introbb1_s.mp4");
+    this.loopVideoSrc = require("@/assets/video/introbb2_s.mp4");
+  } else {
+    this.introVideoSrc = require("@/assets/video/introf1_s.mp4");
+    this.loopVideoSrc = require("@/assets/video/introf2_s.mp4");
+   }
 
     document.body.style.overflow = "hidden";
     window.addEventListener("wheel", this.preventScroll, { passive: false });
@@ -84,12 +84,11 @@ export default {
       }, 200);
     },
     goToPageF1() {
-  document.body.style.overflow = "";
-  window.removeEventListener("wheel", this.preventScroll);
-  window.removeEventListener("touchmove", this.preventScroll);
-
-  this.$router.push({ name: "PageF1" });
-},
+      document.body.style.overflow = "";
+      window.removeEventListener("wheel", this.preventScroll);
+      window.removeEventListener("touchmove", this.preventScroll);
+      this.$router.push({ name: "PageF1" });
+    },
   },
 };
 </script>
@@ -173,36 +172,23 @@ export default {
     bottom: 22%;
   }
 }
-@media (min-width: 1024 && max-width: 1200){
-  .video{
+
+@media (min-width: 1024 && max-width: 1200) {
+  .video {
     transform: scaleY(1.15);
   }
 }
+
 @media (min-height: 700px) {
-  .video{
-  transform: scaleY(1.15);
+  .video {
+    transform: scaleY(1.15);
   }
 }
+
 @media (max-height: 600px && max-width: 1024px) {
-  .video{
-  transform: scaleY(1.075);
+  .video {
+    transform: scaleY(1.075);
   }
 }
 </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
